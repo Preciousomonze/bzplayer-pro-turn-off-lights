@@ -1,6 +1,8 @@
 # bzplayer-pro-turn-off-lights
 bzplayer-pro Turn Off the lights Wordpress Plugin
 
+Note, when you see the zip file in the repo, then the plugin is completed, else still in an unstable mode, be warned :-0
+
 ## How to Use
 
 #### 1 - Upload & Activate Plugin
