@@ -5,7 +5,7 @@ bzplayer-pro Turn Off the lights Wordpress Plugin
 
 #### 1 - Upload & Activate Plugin
 
-Download the zip file  and upload either through 
+Download the zip file or download this repo and zip it, and upload either through 
 - ftp/cpanel to "wp-content/plugins/".
 - the WordPress dashboard in "plugin > add new" page. 
 - Activate the plugin and you're good to go.
