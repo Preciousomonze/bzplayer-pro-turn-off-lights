@@ -1,26 +1,19 @@
-/* script */
+/* script to handle the lights off feature 
+ * @author Precious Omonzejele <omonze@peepsipi.com>
+ */
 var $ = jQuery;
+var bpzShadowId = "bpz-pk-shadow";
+//set the height before handle
+$(document).ready(function(){
+    $("#"+bpzShadowId).css("height", $(document).height()).hide();
+	$('body').prepend('<div id="'+bpzShadowId+'"></div>')
+});
 
 /**
- * trigger the popup
+ * bring the light effect and do other stuff
  *@param int ticketId
  *@param string type, if its form type, does the necessary, else, bla, i'm tired jare.
  */
-function mauvTicketTrig(ticketId,type){
-	if(ticketId == "" || ticketId == 0){
-		alert("An error occured, couldn't get event key");
-		return;
-	}
-	var mauvFormData = {};
-	if(type == "form"){//serialise the ish
-		var mauvForm = $('form#mauv-form-ticket').serializeArray();
-		var _formData = {};
-		for (var i = 0; i < mauvForm.length; i++){
-			_formData[mauvForm[i]['name']] = mauvForm[i]['value'];
-		}
-		 mauvFormData = JSON.stringify(_formData);
-	}
-frame = new MauvFrame({ 'eventPk' : ticketId, userFormData : mauvFormData, onSuccess : function(){}, onClose : function(){} });
-//start
-frame.loadMauvFrame();
+function bpzPkTurnOffTheLights(element_id){
+	$(element)
 }
