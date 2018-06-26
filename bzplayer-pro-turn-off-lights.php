@@ -18,12 +18,12 @@ if ( !function_exists( 'add_action' ) ) {
 	echo 'Yo!  I\'m just a plugin, not much I can do when called directly. I love being moved along with the wp family :)';
 	exit;
 }
-define( 'MAUV_PK_PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
+define( 'BZP_PK_PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 //version
 $bzp_pk_version = '1.0';
 //start enqeueing
 if(!function_exists('bzp_pk_js_enqueue')){
-	function mauv_pk_js_script() {
+	function bzp_pk_js_script() {
 		//p_enqueue_script('NameMySccript','path/to/MyScript','dependencies_MyScript', 'VersionMyScript', 'InfooterTrueorFalse');	
 		//local script
 		wp_register_script('bzp_pk_js-buy-ticket-trigger',plugins_url( '/assets/js/script.js', __FILE__ ),array('jquery'),$bzp_pk_version,true);
@@ -35,7 +35,7 @@ add_action( 'wp_print_scripts', 'bzp_pk_js_script' );
 
 //adding css
 if(!function_exists('bzp_pk_css_enqueue')){
-function mauv_pk_css_enqueue() {        
+function bzp_pk_css_enqueue() {        
 	wp_enqueue_style( 'bzp_pk_css-style',plugins_url( '/assets/css/style.css', __FILE__ ));
     }
 }
