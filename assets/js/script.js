@@ -12,10 +12,9 @@ $(document).ready(function(){
 
 /**
  * bring the light effect and do other stuff
- *@param int ticketId
- *@param string type, if its form type, does the necessary, else, bla, i'm tired jare.
+ *@param int elementClass the video class
  */
-function bpzPkTurnOffTheLights(elementId){
+function bpzPkTurnOffTheLights(elementClass){
 	var _btnId = $("#"+elementId);
 	//check if the shadow is already there
 	if($("#"+bpzShadowId).hasClass('is-showing')){//the lights are already off
@@ -28,6 +27,13 @@ function bpzPkTurnOffTheLights(elementId){
 	}
 }
 
+/**
+ * turn of the light effect and do other stuff
+ *@param int elementClass the video class
+ */
+function bpzpkturnOnTheLights(elementClass){
+	
+}
 $("button.vjs-button.vjs-control").click(function(){
    //set an id attr for it
    var theRand = Math.floor((Math.random() * 400) + 1);//gen random number for id
