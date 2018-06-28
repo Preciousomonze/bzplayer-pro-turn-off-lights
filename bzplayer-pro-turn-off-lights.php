@@ -26,7 +26,7 @@ if(!function_exists('bzp_pk_js_enqueue')){
 	function bzp_pk_js_script() {
 		//p_enqueue_script('NameMySccript','path/to/MyScript','dependencies_MyScript', 'VersionMyScript', 'InfooterTrueorFalse');	
 		//local script
-		wp_register_script('bzp_pk_js-buy-ticket-trigger',plugins_url( '/assets/js/script.js', __FILE__ ),array('jquery'),$bzp_pk_version,true);
+		wp_register_script('bzp_pk_js-buy-ticket-trigger',plugins_url( '/assets/js/script.min.js', __FILE__ ),array('jquery'),$bzp_pk_version,true);
 		wp_enqueue_script( 'bzp_pk_js-buy-ticket-trigger');
 	}
 }
