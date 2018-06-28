@@ -71,6 +71,7 @@ function bzpnativeVidExec(){
 }
 
 if($('.video-js').hasClass('vjs-youtube')){//for youtube, will have to handle differently
+	alert('Sorry, the effect for youtube embeded videos isn\'t supported yet :( ');
 	//bzpiframeExec(); still coming soon :-0
 }
 else{//normal way
