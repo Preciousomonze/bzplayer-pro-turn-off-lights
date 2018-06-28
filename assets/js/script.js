@@ -64,7 +64,7 @@ function bzpnativeVidExec(){
 	//for the video effects
 	var vidItself = $('.'+bzpvidClass);
 	vidItself.on('playing',function(){
-		bzppkturnOffTheLights(this);//(bzpvidClass);
+		bzppkturnOffTheLights(this);
 	});	
 	vidItself.on('pause',function(){
 		bzppkturnOnTheLights(this);
