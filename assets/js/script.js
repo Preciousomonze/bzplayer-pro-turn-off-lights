@@ -18,7 +18,6 @@ $(document).ready(function(){
  *@param string elementClass the video class
  */
 function bzppkturnOffTheLights(elementClass){
-	alert("lights are off");
 	var _thevid = $("."+elementClass);
 	//set the z-index
 	_thevid.closest('.video-js').css('z-index','1999');
@@ -31,10 +30,9 @@ function bzppkturnOffTheLights(elementClass){
  *@param string elementClass the video class
  */
 function bzppkturnOnTheLights(elementClass){
-	alert("lights are on");
 	var _thevid = $("."+elementClass);
 	//set the z-index
-		_thevid.closest('.video-js').removeAttr('z-index',bzpvidzindex);	
+		_thevid.closest('.video-js').css('z-index',bzpvidzindex);	
 	//show the div shadow
 	$('#'+bzpshadowId).fadeOut();	
 }
@@ -46,7 +44,6 @@ function bzpiframeExec(){
 		//set an id attr for it
 		var theRand = Math.floor((Math.random() * 400) + 1);//gen random number for id
 		bzpvidClass = "bzp-pk-vid-"+theRand;
-  
 		$(this).contains('video').addClass(bzpvidClass);
 		console.log($('.'+bzpvidClass));
 	});
@@ -56,6 +53,8 @@ function bzpnativeVidExec(){
 	//gen class name
 	var theRand = Math.floor((Math.random() * 400) + 1);//gen random number for id
 	bzpvidClass = "bzp-pk-vid-"+theRand;
+	//get the z-index
+	bzpvidzindex = $('.video-js').css('z-index');
 	$('.video-js video').addClass(bzpvidClass);
 	//for the video effects
 	var vidItself = $('.'+bzpvidClass);
