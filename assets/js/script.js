@@ -1,4 +1,6 @@
-/* script to handle the lights off feature, trying to see if it'll be necessary to detect if its an iframe, or directly a video
+/** script to handle the lights off feature,
+ * works for video embed in a div(or any element) having "video-js" as one of it's class name, 
+ * trying to see if it'll be necessary to detect if its an iframe, or directly a video
  * Iframes are used when the video is from stuff like youtube, etc.
  * For now, its only working for the native links, if you get videos from youtube src,vimeo,etc, it loads into an iframe, so the effect wont working
  * still trying to sort that out, but quite busy. :0
