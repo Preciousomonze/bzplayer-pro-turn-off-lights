@@ -31,7 +31,7 @@ if(!function_exists('bzp_pk_js_enqueue')){
 	}
 }
 //just incase we encounter a wretched theme that doesn't have wp_footer(), we should hook up with print scripts
-add_action( 'wp_print_scripts', 'bzp_pk_js_script' );
+add_action( 'wp_enqueue_scripts', 'bzp_pk_js_script' );
 
 //adding css
 if(!function_exists('bzp_pk_css_enqueue')){
