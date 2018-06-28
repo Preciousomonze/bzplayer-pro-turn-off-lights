@@ -1,4 +1,4 @@
-# bzplayer-pro-turn-off-lights
+# bzplayer-pro-turn-off-lights WordPress Plugin
 bzplayer-pro Turn Off the lights Wordpress Plugin
 It adds a "turn off the light " feature when videos from bzplayer-pro plugin are played.
 Only supports the all videos with html5 video feature apart from videos from youtube,vimeo links embeded with iframe, tired of typing jare.
