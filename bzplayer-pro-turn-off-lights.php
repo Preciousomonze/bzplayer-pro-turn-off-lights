@@ -8,7 +8,7 @@ Plugin URI: https://github.com/preyous/bzplayer-pro-turn-off-lights
 Description: This plugin gives the "Turn off the lights" feature when your bzplayer-pro videos are set to play. Very light and should be compatible with recent Wordpress. It's still an MVP shaa
 Version: 1.0.0
 Author: Precious Omonzejele
-Author URI: https://omonze.peepsipi.com/
+Author URI: https://github.com/preyous/
 License: MIT
 Text Domain: bzplayer-pro-turn-off-lights
 */
